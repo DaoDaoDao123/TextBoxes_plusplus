@@ -130,7 +130,7 @@ WORKDIR $CAFFE_ROOT
 # Cython needs to be installed seperately
 Copy python ${CAFFE_ROOT}/python
 RUN pip install Cython==0.28.5
-RUN pip install -r python/requirements.txt
+RUN pip install -i https://mirrors.ustc.edu.cn/pypi/web/simple -r python/requirements.txt
 
 ########################################
 #### Install Textboxes++ ###############
